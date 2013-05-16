@@ -1,7 +1,10 @@
-// write your CSS in here
 
 
-.ui-grid-a-search-mini {width:15%;
+
+
+
+ui.page
+{
+background-image: url('images/wood.png');
 	
 }
-.ui-page { background-image : url(images/wood.png);background-repeat:no-repeat;position:fixed;}
