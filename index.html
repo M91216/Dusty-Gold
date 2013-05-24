@@ -13,11 +13,8 @@
 
 <!-- Mobile IE needs ClearType for smoothing fonts -->
 <meta http-equiv="cleartype" content="on">
-
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
 <link rel="stylesheet" href="style.css" />
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
 </head>
 <style>
 .ui-page {
@@ -215,7 +212,7 @@
 </div>
 
 <!--Artists-->
-<div data-role="page" id="artists"data-position="fixed">
+<div data-role="page" id="artist"data-position="fixed">
  <div data-role="header"data-position="fixed">
   <h1>Artists</h1>
   <a href="#home" data-role="button" data-mini="true" data-them="a">BACK</a>
@@ -526,9 +523,109 @@
   <a href="#" data-role="button" data-mini="true" data-them="a">Dusty Fingers</a>
 </div>
  <div data-role="content">
+<form <form action="" method="post" id="addForm" style="margin-left:13px; margin-right:13px;">
+   
+  <div data-role="fieldcontain"
+   <label for="customer">User</label>
+   <input name="user"  type="text" id="uname" placeholder="First and Last Name"class="required"/> 
+
+</div>
+  
+    <label for="email">Email</label>
+    <input name="email" type="text" id="email" placeholder="example@email.com" class="required email" /> 
+  
+  
+  
+    <label for="phone">Phone</label>
+    <input name="phone" type="text" id="phone" placeholder="###-###-####"class="required phone"/> 
+    
+    
+    
+    <label for="album">Album</label>
+    <input name="album" type="text" id="album" /> 
+    
+    
+    
+    <label for="song">Song</label>
+    <input name="song" type="text" id="song" /> 
+    
+        
+    
+    <label for="artist">Artist</label>
+    <input name="artist" type="text" id="artist" /> 
+    
+    
+    <label for="year">Year</label>
+    <input name="year" type="text" id="year" /> 
+    
+    
+    
+    <label for="label">Label</label>
+    <input name="label" type="text" id="labels" /> 
 
 
+    <label for="date">Purchase Date</label>
+    <input name="date" type="date" id="date" date-placeholder="true"/> 
+    
+    
+    <label for="store">Record Store</label>
+    <input name="store" type="text" id="store" /> 
+    
+    <fieldset data-role="controlgroup">
+    <li><label for="release">Album Release:</label>						
+			<ul class="radiobutton" id="radio">
+			<li><input type="radio" value="original" id="original" name="release" /><label for="original">Original</label></li>
+			<li><input type="radio" value="reissue" id="reissue" name="release" /><label for="reissue">Reissue</label></li>
+			</ul>
+    </fieldset>
+	
+	<fieldset data-role="controlgroup">	
+	<label>
+        <input type="checkbox" id="imported" data-native="false" name="checkbox-0 ">Import
+    </label>
+	 </fieldset>
+    
+    <label for="format">Sampled</label>
+     <select name="format" id="optgroup" data-native-menu="false"> 
+        <option data-placeholder="true">Sample Section</option>
+        <option value="intro">Intro</option>							
+        <option value="bridge">Bridge</option>
+        <option value="verse">Verse</option>
+        <option value="chorus">Chorus</option>
+     </select>
+     
+     
+     
+     
+     
+     <label for="block">Song Length</label>
+     <input name="minutes" type="range" id="minutes" value="3" min="0" max="10"/><br>
 
+     
+     
+     <label for="comments" id="comments">Special Notes For Album </label>
+     <textarea></textarea>
+     
+     
+        <input type="submit" value="Save Album" data-theme="b" id="submitAlbum" />			          
+
+               
+  
+     <input type="reset" value="Cancel" data-theme="a" />
+
+     
+     
+     
+     <div data-role="fieldcontain">
+         <a href="#" id="clearLink">Clear Stored Data</a>
+         <a href="#" id="displayLink">Display Data</a>
+         <a href="#"id="addNew">Add New Session</a>
+     </div>
+
+      <!--<a href="#dustyerrors" id="errorslink" data-rel="dialog" data-transotion="pop">open errors</a>-->
+     
+  </form>  
+   
 </div>
   <div data-role="footer"data-position="fixed">
   <div data-role="navbar">
@@ -537,25 +634,39 @@
           <li><a href="#news">News</a></li>
           <li><a href="#about">About</a></li>
       </ul>
+      
   </div>
  </div>
 </div>
+ 
+  
 
 
 
+<!--<div data-role="dialog" id="dustyerrors">
+    
+    <div data-role"header" data-position="fixed">
+        <h1>Missing Fields</h1>
+    </div>
+    
+    <div data-role="content">
+        <ul>
+            <li>Test</li>
+        </ul>
+    </div>
+</div>-->
+    
+    
+    
+    
 
 
 
-
-
-
-
-
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
 <script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
-<script src="js/Main.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
 <script src="js/json.js" type="text/javascript"></script>
-
-
 
 
 </body>

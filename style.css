@@ -3,8 +3,6 @@
 
 
 
-ui.page
-{
-background-image: url('images/wood.png');
+label.error{display: block; margin:10px, 0; color:#cc0000;
 	
 }

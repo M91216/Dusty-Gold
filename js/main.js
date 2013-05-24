@@ -1,34 +1,34 @@
 
 
+var parseDustyForm = function(data){
+	// Uses form data here;
+	
+};
 
-//wait until the DOM is ready.
-
+$(document).ready(function(){
+	
+		
+	var dustyForm = $("#addForm");
+	
+	dustyForm.validate({
+	    invalidHandler: function(form, validator){},
+	    submitHandler: function(){
+		    var data = dustyForm.serializeArray();
+		    parseDustyForm(data);
+	    }
+	 });
+	
 
 window.addEventListener("DOMContentLoaded", function(){
-
 
 	//getElementById Function
 	function ge(getElement) {
 		var theElement = document.getElementById(getElement);
 		return theElement
 	}
-
-	//Create select field element and populate with options.
-	function makeOpt(){
-		var formTag = document.getElementsByTagName("form"), //formTag is an array of all the form tags.
-			selectLi = ge("select"),
-			makeSelect = document.createElement("select");
-			makeSelect.setAttribute("id", "optgroup");
-		for(var i=0, j=sampleGroups.length; i<j; i++){
-			var makeOption = document.createElement("option");
-			var opText = sampleGroups[i];
-			makeOption.setAttribute("value", opText);
-			makeOption.innerHTML = opText;
-			makeSelect.appendChild(makeOption);
-		}
-		selectLi.appendChild(makeSelect);
-	}
-
+	
+	
+		
 	//Find value of selected radio button
 	function getSelectedRadio(){
 		var radios = document.forms[0].release;
@@ -38,26 +38,29 @@ window.addEventListener("DOMContentLoaded", function(){
 		   }		   
 		}
 	}
-
+	
 	function getCheckboxValue(){
+		var check = document.forms[0].imported;
 		if(ge("imported").checked){
 			importValue = ge("imported").value;
 		}else{
 			importValue = "No"
-		}
+		
 	}
 
-	function toggleControls(n){
+	}
+	    
+    function toggleControls(n){
 		switch(n){
 			case "on":
-			   ge("sessionForm").style.display = "none";
-			   ge("clear").style.display = "inline";
+			   ge("addAlbum").style.display = "none";
+			   ge("clearLink").style.display = "inline";
 			   ge("displayLink").style.display = "none";
 			   ge("addNew").style.display = "inline";
 			   break;
 			case "off":
-			   ge("sessionForm").style.display = "block";
-			   ge("clear").style.display = "inline";
+			   ge("addAlbum").style.display = "block";
+			   ge("clearLink").style.display = "inline";
 			   ge("displayLink").style.display = "inline";
 			   ge("addNew").style.display = "none";
 			   ge("items").style.display = "none";		    
@@ -67,8 +70,8 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	}
 
-
-	function storeData(){
+    
+    	function storeData(){
 	   		var id               = Math.floor(Math.random()*100000001);
 		//Set the id to the existing key we're editing so that it will save over the data. 
 		//The key is the same key that's been passed along from the editSubmit event handler
@@ -92,7 +95,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			item.minutes     = ["Song Length:", ge("minutes").value];
 			item.comments    = ["Special Notes For Album:", ge("comments").value];
 			item.imported    = ["Import:", importValue];
-			item.release     = ["Album Release:", releaseValue];
+			item.release     = ["Album Release:", releaseValue];//
 		 //Save data into Local Storage: Use Stringify to convert our object to a string.
 		 localStorage.setItem(id, JSON.stringify(item));
 		 alert("Contact Saved");	   
@@ -179,10 +182,10 @@ window.addEventListener("DOMContentLoaded", function(){
 	  //grab the data from our local Storage.
 	  var value = localStorage.getItem(this.key);
 	  var item =JSON.parse(value);
-      
+
 
 	  //show the form
-	  toggleControls("off");
+	 
 
 	  ge("optgroup").value = item.optgroup[1];
 	  ge("uname").value = item.uname[1];
@@ -197,14 +200,14 @@ window.addEventListener("DOMContentLoaded", function(){
 	  ge("store").value = item.store[1];
 	  ge("minutes").value = item.minutes[1]; 
 	  ge("comments").value = item.comments[1];
-	  var checkBox = document.forms[0].imported;
-	  for(var i=0; i<checkBox.length; i++){
-	  	if(checkBox[i].value == "Yes" && item.imported[1] == "Yes"){
-	  	   checkBox[i].setAttribute("checked");
+	  var check = document.forms[0].imported;
+	  for(var i=0; i<check.length; i++){
+	  	if(check[i].value == "Yes" && item.imported[1] == "Yes"){
+	  	   check[i].setAttribute("checked");
 
 		  }
 
-	  }  
+   }  
 
 	  	var radios = document.forms[0].release;
 	  	for(var k=0; k<radios.length; k++){
@@ -212,7 +215,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		  	   radios[k].setAttribute("checked","checked");
 		  	}else if(radios[k].value == "reissue" && item.release[1] == "reissue"){
 			  	radios[k].setAttribute("checked","checked");
-		  	}
+		  }
 
 	}
 	//Remove the initial listener from the input "save contact" button.
@@ -252,39 +255,40 @@ window.addEventListener("DOMContentLoaded", function(){
 
    //Variable defaults
    var sampleGroups = ["--Choose Sample Section--", "Intro", "Verse", "Chorus", "Bridge"],
-	   releaseValue,
+	   releaseValue
 	   importValue = "No"
-   ;
-   makeOpt();
-
+	;
+    
+  
    //Set Link $submit Click Events
    var displayLink =ge("displayLink");
    displayLink.addEventListener("click",getData);
-   var clearLink = ge("clear");
+   var clearLink = ge("clearLink");
    clearLink.addEventListener("click" ,clearLocal);
    var save = ge("submitAlbum");
    save.addEventListener("click", storeData);
 
+//The functions below can go inside or outside the pageinit function for the page in which it is needed.
 
-});    
+/*var autofillData = function (){
+	 
+};
 
+var getData = function(){
 
+};
 
+var storeData = function(data){
+	
+}; 
 
+var	deleteItem = function (){
+			
+};
+					
+var clearLocal = function(){
 
+;*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+})
+});
