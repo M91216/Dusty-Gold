@@ -20,7 +20,7 @@ var json = {
 		"minutes":   ["Minutes:", "5"],
 		"comments":  ["Comments:", "Used the drums."],
 		"imported":  ["Import:", "No"],
-		"radio":     ["Release:", "Reissue"]
+		"release":     ["Release:", "Reissue"]
 		
 				
 	},
@@ -39,7 +39,7 @@ var json = {
      	"minutes":   ["Minutes:", "3"],
      	"comments":  ["Comments:", "Rhodes sample."],
      	"imported":  ["Import:", "Yes"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
      
      },
@@ -58,7 +58,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "Guitar sample."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Original"]
+     	"release":     ["Release:", "Original"]
 
      
      },
@@ -77,7 +77,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "Used the drums."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
      		
      		
@@ -97,7 +97,7 @@ var json = {
 	  	"minutes":   ["Minutes:", "3"],
 	  	"comments":  ["Comments:", "Piano sample."],
 	  	"imported":  ["Import:", "Yes"],
-	  	"radio":     ["Release:", "Original"]
+	  	"release":     ["Release:", "Original"]
 
      
      
@@ -117,7 +117,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "Used the drums."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
 
       },
@@ -136,7 +136,7 @@ var json = {
      	"minutes":   ["Minutes:", "4"],
      	"comments":  ["Comments:", "Vocal sampled."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Original"]
+     	"release":     ["Release:", "Original"]
 
      		
      		
@@ -156,7 +156,7 @@ var json = {
 	  	"minutes":   ["Minutes:", "5"],
 	  	"comments":  ["Comments:", "string section sample."],
 	  	"imported":  ["Import:", "No"],
-	  	"radio":     ["Release:", "Original"]
+	  	"release":     ["Release:", "Original"]
 
 	  	
 
@@ -177,7 +177,7 @@ var json = {
        	"minutes":   ["Minutes:", "3"],
        	"comments":  ["Comments:", "Used the drums."],
        	"imported":  ["Import:", "No"],
-       	"radio":     ["Release:", "Original"]
+       	"release":     ["Release:", "Original"]
 
 
      
@@ -197,7 +197,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "Vibraphone sample."],
      	"imported":  ["Import:", "Yes"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
      
      
@@ -217,7 +217,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "Used the drums."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
 
 
@@ -237,7 +237,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "Used the drums."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
   
   
@@ -257,7 +257,7 @@ var json = {
      	"minutes":   ["Minutes:", "7"],
      	"comments":  ["Comments:", "Used the drums."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Original"]
+     	"release":     ["Release:", "Original"]
 
 
 
@@ -277,7 +277,7 @@ var json = {
      	"minutes":   ["Minutes:", "4"],
      	"comments":  ["Comments:", "Used the drums."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
 
 
@@ -298,7 +298,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "For Drums."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Original"]
+     	"release":     ["Release:", "Original"]
 
 
 
@@ -318,7 +318,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "Used the harp."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
 
 
@@ -338,7 +338,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "Used the drums."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
       
       
@@ -358,7 +358,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "Used the drums."],
      	"imported":  ["Import:", "No"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
      
      
@@ -378,7 +378,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "Used the drums."],
      	"imported":  ["Import:", "Yes"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
 
      },
@@ -397,7 +397,7 @@ var json = {
      	"minutes":   ["Minutes:", "5"],
      	"comments":  ["Comments:", "Used the drums."],
      	"imported":  ["Import:", "Yes"],
-     	"radio":     ["Release:", "Reissue"]
+     	"release":     ["Release:", "Reissue"]
 
 
      	
