@@ -1,0 +1,28 @@
+
+
+
+
+
+label.error{display: block; margin:10px, 0; color:#cc0000;
+	
+}
+
+body .ui-body-c{
+    color:#000000;
+    text-shadow:none;
+   
+}
+
+
+.ui-body-a{
+color:#ffffff;
+text-shadow:none;
+background-color:#000000;
+}
+
+ #artist div  li {
+    list-style-type: none;
+}
+div#content {
+    background-color: #FFF;
+}
